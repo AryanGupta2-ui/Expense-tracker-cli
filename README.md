@@ -90,4 +90,4 @@ This file is created automatically the first time you add an expense — no manu
 
 ## Author
 
-Aryan Gupta — built as a project for the VIT flipped course evaluation.
+Aryan Gupta — built this project for the VIT flipped course evaluation.
