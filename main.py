@@ -3,16 +3,16 @@ main.py
 Entry point for the Expense Tracker CLI.
 Shows a menu and connects expense.py and storage.py together.
 """
-
 from expense import get_expense_input
 from storage import load_expenses, save_expenses, get_next_id
-
+from reports import print_summary_report
 
 def show_menu():
     print("\n===== Expense Tracker =====")
     print("1. Add Expense")
     print("2. View All Expenses")
-    print("3. Exit")
+    print("3. View Summary Report")
+    print("4. Exit")
 
 
 def view_expenses(expenses):
@@ -30,7 +30,7 @@ def main():
 
     while True:
         show_menu()
-        choice = input("Choose an option (1-3): ").strip()
+        choice = input("Choose an option (1-4): ").strip()
 
         if choice == "1":
             next_id = get_next_id(expenses)
@@ -44,11 +44,14 @@ def main():
             view_expenses(expenses)
 
         elif choice == "3":
+            print_summary_report(expenses)
+
+        elif choice == "4":
             print("Goodbye! Your data has been saved.")
             break
 
         else:
-            print("Invalid choice. Please enter 1, 2, or 3.")
+            print("Invalid choice. Please enter 1, 2, 3, or 4.")
 
 
 if __name__ == "__main__":

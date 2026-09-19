@@ -5,5 +5,19 @@
         "category": "Food",
         "amount": 250.0,
         "note": "breakfast"
+    },
+    {
+        "id": 2,
+        "date": "2026-09-19",
+        "category": "Travel",
+        "amount": 12365.0,
+        "note": "aeroplane"
+    },
+    {
+        "id": 3,
+        "date": "2026-09-19",
+        "category": "Food",
+        "amount": 753.0,
+        "note": "pasta"
     }
 ]
